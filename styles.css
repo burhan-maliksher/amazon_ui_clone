@@ -1,0 +1,30 @@
+body{
+    box-sizing: border-box;
+}
+
+.hoverBorder:hover{
+    border-radius: 0%;
+    border:1px solid #f3f3f3;
+}
+
+.dropdown-hover .dropdown-toggle:hover + .dropdown-menu{
+    display:block;
+}
+.dropdown-arrow::before {
+    content: '';
+    position: absolute;
+    top: -8px; /* Position the arrow above the menu */
+    left: 40%;
+    border-width:0px 8px 8px ;
+    border-style: solid;
+    border-color:  white transparent white   ; /* Arrow color (blue in this example) */
+    transform: translateX(-50%);
+    
+}
+
+.orange-border{
+    border: 2px solid #febd69;
+    outline:2px solid #febd69 ;
+    box-shadow: 0 0 20px rgb(254,189,105,0.8);
+    border-radius: 10px;
+}

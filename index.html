@@ -1,23 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="icon" href="favicon.png" type="image/png" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="icon" href="favicon.png" type="image/png" />
     <title>Amazon UI Clone</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <header >
-        <nav title="navigation bar" class="navbar bg-dark">
-            <div class="container-fluid ">
-                <!-- <a class="nav-brand" href="#"> -->
-                    <img src="amazon-logo.png" alt="" class="navbar-brand" style="max-width: 120px; color: aliceblue;">
-                <!-- </a> -->
+    <header>
+        <nav title="navigation bar" class="navbar d-flex g-2" style="background-color: #131921">
+            <div class="container-fluid justify-content-start">
+                <a class="nav-brand hoverBorder" href="#" style="">
+                    <img src="amazon-logo.png" alt="amazon logo" style="max-width: 120px; color: aliceblue" />
+                </a>
+                <a href="#" style="text-decoration: none" class="text-light p-2 hoverBorder">
+                    <div class="d-flex">
+                        <i class="bi bi-geo-alt py-1" style="width: 20px; font-size: 20px"></i>
+                        <div class="d-flex" style="max-width: 60px">
+                            <p style="
+                    font-weight: lighter;
+                    font-size: small;
+                    line-height: 1;
+                    word-spacing: 2px;
+                  ">
+                                Deliver to
+                                <strong style="font-weight: bold; font-size: medium">Pakistan</strong>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <form id="searchTab" class="d-flex" style="max-height: 50px">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle borderCustColor search" href="#" id="navbarDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false" type="button" style="
+                  background-color: #f3f3f3;
+                  box-shadow: none;
+                  border-radius: 0.5em 0em 0em 0.5em;
+                ">
+                            All
+                        </button>
+                        <ul class="dropdown-menu navbar-nav-scroll" style="max-height: 400px">
+                            <li><a class="dropdown-item">All Departments</a></li>
+                            <li><a class="dropdown-item">All Departments</a></li>
+                            <li><a class="dropdown-item">All Departments</a></li>
+                            <li><a class="dropdown-item">All Departments</a></li>
+                            <li><a class="dropdown-item">All Departments</a></li>
+                            <li><a class="dropdown-item">All Departments</a></li>
+                            <li><a class="dropdown-item">All Departments</a></li>
+                            <li><a class="dropdown-item">All Departments</a></li>
+                            <li><a class="dropdown-item">All Departments</a></li>
+                            <li><a class="dropdown-item">All Departments</a></li>
+                            <li><a class="dropdown-item">All Departments</a></li>
+                            <li><a class="dropdown-item">All Departments</a></li>
+                            <li><a class="dropdown-item">All Departments</a></li>
+                            <li><a class="dropdown-item">All Departments</a></li>
+                            <li><a class="dropdown-item">All Departments</a></li>
+                            <li><a class="dropdown-item">All Departments</a></li>
+                            <li><a class="dropdown-item">All Departments</a></li>
+                            <li><a class="dropdown-item">All Departments</a></li>
+                            <li><a class="dropdown-item">All Departments</a></li>
+                            <li><a class="dropdown-item">All Departments</a></li>
+                            <li><a class="dropdown-item">All Departments</a></li>
+                            <li><a class="dropdown-item">All Departments</a></li>
+                            <li><a class="dropdown-item">All Departments</a></li>
+                            <li><a class="dropdown-item">All Departments</a></li>
+                            <li><a class="dropdown-item">All Departments</a></li>
+                        </ul>
+                    </div>
+                    <input type="search" id="searchInput" placeholder="Search Amazon" class="borderCustColor"
+                        style="width: 50rem; outline: none" />
+                    <button class="btn" id="search" style="
+                background-color: #febd69;
+                outline: none;
+                box-shadow: none;
+                border-radius: 0em 0.5em 0.5em 0em;
+                width: 45px;
+              ">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+                <div class="dropdown dropdown-hover mx-2 hoverBorder">
+                    <button class="btn text-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        <img src="united-states-flag-icon.svg" style="width: 20px" />
+                        <strong>EN</strong>
+                    </button>
+                    <ul class="dropdown-menu dropdown-arrow px-2" style="width: 200px; text-align:left; ">
+                        <p style="font-size: 12px;">Change Language <span style="font-size: 10px; color:blue;">Learn more</span></p>
+                        <li><a class="dropdown-item"></a></li>
+                    </ul>
+                </div>
             </div>
-        
+        </nav>
+        <nav title="navigation bar" class="navbar" style="background-color: #232f3e">
+            asjdkj
         </nav>
     </header>
-    
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
